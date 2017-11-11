@@ -17,7 +17,7 @@ def main(argc, argv):
 
     lines = fo.readlines()
     for line in lines:
-        handle_folder(line)
+        handle_folder(line.strip())
     fo.close()
 
 def handle_folder(path):
